@@ -3,27 +3,23 @@ ul{
 }
 #fAc{
     position: absolute;
-    width:10%;
+    width:45px;
     height:10%;
 }
 #fSub{
-    width:10%;
+    width:45px;
 }
 #fAdd{
-    width:15%;
-    height:10%;
+    width:45px;
+    
 }  
 #fMul{
-    width: 10%;
-    height:8%;
+    width:45px;
+   
 }
 #fDiv{
-    width: 10%;
+    width: 45px;
 }
 #fEq{
-    width:21%;
-}
-button .hover{
-    background-color: aqua;
-
+    width:50px;
 }
