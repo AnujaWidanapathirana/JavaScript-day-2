@@ -1,0 +1,29 @@
+ul{
+    display: flex;
+}
+#fAc{
+    position: absolute;
+    width:10%;
+    height:10%;
+}
+#fSub{
+    width:10%;
+}
+#fAdd{
+    width:15%;
+    height:10%;
+}  
+#fMul{
+    width: 10%;
+    height:8%;
+}
+#fDiv{
+    width: 10%;
+}
+#fEq{
+    width:21%;
+}
+button .hover{
+    background-color: aqua;
+
+}

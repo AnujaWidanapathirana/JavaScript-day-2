@@ -1,27 +1,76 @@
 
+document.getElementById('display').value = 0;
 
-function calc(){
-    let x;
-    let y;
-    x = Number(document.getElementById("number1").value);  
-    y = Number(document.getElementById("number2").value);  
-     let z = document.getElementById("Operator").value;  
-     let output=0;
-
- if(z=="*"){
-         output = x * y;
-    }else if(z=="/"){
-         output = x / y;
-    }else if(z=="+"){
-         output = x + y;
-    }else if(z=="-"){
-        output = x - y;
-    }else if(z=="%"){
-        output = x % y;
-    }
-    console.log(output);
-    alert(output);
+let x;
+let y;
+let op;
+let result;
+function fn0(){
+    let previous=document.getElementById('display').value;
+    document.getElementById('display').value += 0;
 }
+function fn2(){
+    document.getElementById('display').value += 2;
+}
+function fn3(){
+    document.getElementById('display').value += 3;
+}
+function fn4(){
+    document.getElementById('display').value += 4;
+}
+function fn5(){
+    document.getElementById('display').value += 5;
+}
+function fn6(){
+    document.getElementById('display').value += 6;
+}
+function fn7(){
+    document.getElementById('display').value += 7;
+}
+function fn8(){
+    document.getElementById('display').value += 8;
+}
+function fn9(){
+    document.getElementById('display').value += 9;
+}
+function fn1(){
+    document.getElementById('display').value += 1;
+}
+function fnSB(){
+    x = Number(document.getElementById('display').value);
+    document.getElementById('display').value=0;
+    op=1;
+}
+function fnML(){
+    x = Number(document.getElementById('display').value);
+    document.getElementById('display').value=0;
+    op=2;
+}   
+function fnDV(){
+    x = Number(document.getElementById('display').value);
+    document.getElementById('display').value=0;
+    op=3;
+}  
+function fnAD(){
+    x = Number(document.getElementById('display').value);
+    document.getElementById('display').value=0;
+    op=4;
+}
+function fnEQ(){
+    y= Number(document.getElementById('display').value);
+    switch (op){
+        case "1":result=x-y;break;
+        case "2":result=x*y;break;
+        case "3":result=x/y;break;
+        case "4":result=x+y;break;
+    }
+    Number(document.getElementById('display').value = result);
+}
+function fnAc(){
+    document.getElementById('display').value=0;
+}
+
+
 
    
 
